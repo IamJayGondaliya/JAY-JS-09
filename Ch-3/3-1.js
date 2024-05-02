@@ -24,7 +24,6 @@
             - defines the fixed variables.
             - values can't be replaced in the variable.
 
-
     // WAP to swap 2 numbers using 3rd variable.
     // WAP to swap 2 numbers without using 3rd variable.
     // WAP to swap 2 numbers without using 3rd variable or + & -.
