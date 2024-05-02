@@ -7,6 +7,14 @@
   </head>
   <body>
     <div id="display"></div>
+    <input type="text" id="tf" />
+    <input
+      type="button"
+      value="Save"
+      onclick="document.getElementById('data').innerHTML = document.getElementById('tf').value"
+    />
+    <p id="data"></p>
+    <br />
     <input
       type="button"
       value="1"
