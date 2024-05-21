@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <center>
+      <table border="2">
+        <!-- SCREEN -->
+        <tr>
+          <td colspan="2" height="40" align="center">
+            <p id="ans"></p>
+          </td>
+        </tr>
+        <!-- NUMBERS -->
+        <tr>
+          <td width="50" height="20" align="center">
+            <input type="button" value="1" onclick="addValue(1)" />
+          </td>
+          <td width="50" height="20" align="center">
+            <input type="button" value="2" onclick="addValue(2)" />
+          </td>
+        </tr>
+        <!-- OPRTRS -->
+        <tr>
+          <td width="50" height="20" align="center">
+            <input type="button" value="+" onclick="addValue('+')" />
+          </td>
+          <td width="50" height="20" align="center">
+            <input type="button" value="=" onclick="addValue('=')" />
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+  <script>
+    function addValue(value) {
+      let ans = document.getElementById("ans");
+
+      if (value == "=") {
+        ans.innerHTML = eval(ans.innerHTML);
+      } else {
+        ans.innerHTML += value;
+        onclick = "";
+      }
+    }
+  </script>
+</html>

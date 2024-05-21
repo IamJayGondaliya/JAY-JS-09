@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+    <script src="10-2.js"></script>
+  </head>
+  <body>
+    <table border="2">
+      <!-- Display -->
+      <tr>
+        <td colspan="2">
+          <p id="disp">0</p>
+        </td>
+      </tr>
+      <!-- Buttons -->
+      <tr>
+        <td>
+          <input type="button" value="1" onclick="calcButton('1')" />
+        </td>
+        <td>
+          <input type="button" value="2" onclick="calcButton('2')" />
+        </td>
+      </tr>
+      <!-- Operators -->
+      <tr>
+        <td>
+          <input type="button" value="+" onclick="calcButton('+')" />
+        </td>
+        <td>
+          <input type="button" value="=" onclick="calcButton('=')" />
+        </td>
+      </tr>
+    </table>
+    <hr />
+    <center><h4>Recursion</h4></center>
+    <hr />
+    <input type="text" id="start" placeholder="Starting point" /> <br />
+    <input type="text" id="end" placeholder="Ending point" /> <br />
+    <input type="button" value="Loop" onclick="loop()" />
+    <br />
+    <p id="ans"></p>
+  </body>
+</html>

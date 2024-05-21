@@ -6,6 +6,11 @@
         - It can be either value or variable.
         - it decides the type of operator.
 
+    Example:
+        - a + b;
+        - Symbol:       +       (Operator)
+        - Variables:    a, b    (Operands)
+
     Types of operator:
 
         - Unary         (single operand)
